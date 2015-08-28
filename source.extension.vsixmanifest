@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="GoToDefinitionFix.cc92d450-1863-4432-9fa8-ae96183b88b0" Version="1.0" Language="en-US" Publisher="Dmitry Nesterov" />
+    <DisplayName>GoToDefinition Fix</DisplayName>
+    <Description xml:space="preserve">Fixes the "One or more errors occurred" error of VS2015 when you try to use the "Go to definition (F12)" command on system type in C#.</Description>
+    <Icon>Resources\Package.ico</Icon>
+    <PreviewImage>Resources\Package.ico</PreviewImage>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
